@@ -1,18 +1,9 @@
 return {
   {
-    "folke/tokyonight.nvim",
-    lazy = true,
+    "karb94/neoscroll.nvim",
     opts = {
-      style = "moon",
-      transparent = false,
-      styles = {
-        sidebar = "transparent",
-        floats = "dark",
-      },
+      mappings = { "<C-u>", "<C-d>", "<C-b>", "<C-f>", "<C-y>", "<C-e>", "zt", "zz", "zb" },
     },
-  },
-  {
-    "ellisonleao/gruvbox.nvim",
   },
   {
     "nvim-telescope/telescope.nvim",
@@ -21,6 +12,15 @@ return {
         path_display = { "truncate" },
       },
     },
+    dependencies = {
+      "nvim-telescope/telescope-live-grep-args.nvim",
+      -- This will not install any breaking changes.
+      -- For major updates, this must be adjusted manually.
+      version = "^1.0.0",
+    },
+    config = function()
+      require("telescope").load_extension("live_grep_args")
+    end,
   },
   {
     "akinsho/bufferline.nvim",
@@ -35,10 +35,5 @@ return {
     opts = {
       current_line_blame = true,
     },
-  },
-  {
-    "tinted-theming/base16-vim",
-    lazy = true,
-    opts = { "darcula", "rose-pine-wood" },
   },
 }
