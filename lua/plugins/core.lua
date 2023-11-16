@@ -1,28 +1,5 @@
 return {
   {
-    "karb94/neoscroll.nvim",
-    opts = {
-      mappings = { "<C-u>", "<C-d>", "<C-b>", "<C-f>", "<C-y>", "<C-e>", "zt", "zz", "zb" },
-    },
-  },
-  {
-    "nvim-telescope/telescope.nvim",
-    opts = {
-      defaults = {
-        path_display = { "truncate" },
-      },
-    },
-    dependencies = {
-      "nvim-telescope/telescope-live-grep-args.nvim",
-      -- This will not install any breaking changes.
-      -- For major updates, this must be adjusted manually.
-      version = "^1.0.0",
-    },
-    config = function()
-      require("telescope").load_extension("live_grep_args")
-    end,
-  },
-  {
     "akinsho/bufferline.nvim",
     opts = {
       options = {
@@ -34,6 +11,35 @@ return {
     "lewis6991/gitsigns.nvim",
     opts = {
       current_line_blame = true,
+    },
+  },
+  {
+    "nvim-treesitter/nvim-treesitter-context",
+    enabled = false,
+  },
+  {
+    "stevearc/conform.nvim",
+    optional = true,
+    opts = {
+      formatters_by_ft = {
+        ["javascript"] = { "prettier" },
+        ["javascriptreact"] = { "prettier" },
+        ["typescript"] = { "prettier" },
+        ["typescriptreact"] = { "prettier" },
+        ["vue"] = { "prettier" },
+        ["css"] = { "prettier" },
+        ["scss"] = { "prettier" },
+        ["less"] = { "prettier" },
+        ["html"] = { "prettier" },
+        ["json"] = { "prettier" },
+        ["jsonc"] = { "prettier" },
+        ["yaml"] = { "prettier" },
+        ["markdown"] = { "prettier" },
+        ["markdown.mdx"] = { "prettier" },
+        ["graphql"] = { "prettier" },
+        ["handlebars"] = { "prettier" },
+        -- ["htmldjango"] = { "djlint" },
+      },
     },
   },
 }

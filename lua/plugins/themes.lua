@@ -7,7 +7,7 @@ return {
       transparent = false,
       styles = {
         sidebar = "transparent",
-        floats = "normal",
+        floats = "dark",
       },
     },
   },
@@ -18,6 +18,12 @@ return {
     "rebelot/kanagawa.nvim",
   },
   {
+    "neanias/everforest-nvim",
+  },
+  {
+    "savq/melange-nvim",
+  },
+  {
     "catppuccin/nvim",
     integration = {
       cmp = { enabled = true, border = false },
@@ -26,6 +32,5 @@ return {
   {
     "tinted-theming/base16-vim",
     lazy = true,
-    opts = { "darcula", "rose-pine-wood" },
   },
 }

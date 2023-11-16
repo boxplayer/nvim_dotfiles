@@ -7,3 +7,5 @@ vim.cmd([[
   autocmd BufRead,BufEnter *.handlebars set filetype=html
   augroup end
 ]])
+
+vim.opt.relativenumber = false
