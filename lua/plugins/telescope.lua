@@ -2,6 +2,8 @@ return {
   "nvim-telescope/telescope.nvim",
   opts = {
     defaults = {
+      layout_strategy = "horizontal",
+      prompt_prefix = "LOL> ",
       path_display = { "truncate" },
     },
     pickers = {
