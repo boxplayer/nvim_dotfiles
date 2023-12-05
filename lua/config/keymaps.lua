@@ -13,3 +13,6 @@ end, { desc = "Compare file with current" })
 
 -- Aerial toggle keymap
 vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle!<CR>")
+
+-- Cellular automaton
+vim.keymap.set("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>")
