@@ -35,12 +35,21 @@ return {
           horizontal = { mirror = true },
           vertical = { mirror = true },
         },
+        lsp_references = {
+          fname_width = 60,
+        },
         layout_strategy = "vertical",
         winblend = 0,
         selection_strategy = "reset",
         sorting_strategy = "ascending",
+        dynamic_preview_title = true,
         path_display = { "smart" },
         file_ignore_patterns = { ".git/", ".git\\", "node_modules" },
+      },
+      pickers = {
+        lsp_references = {
+          fname_width = 120,
+        },
       },
       extensions = extensions,
     })

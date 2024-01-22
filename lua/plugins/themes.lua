@@ -1,6 +1,7 @@
 return {
   {
     "folke/tokyonight.nvim",
+    priority = 1000,
     lazy = true,
     opts = {
       style = "moon",
@@ -25,6 +26,7 @@ return {
   },
   {
     "catppuccin/nvim",
+    priority = 1000,
     integration = {
       cmp = { enabled = true, border = false },
     },
@@ -32,5 +34,16 @@ return {
   {
     "tinted-theming/base16-vim",
     lazy = true,
+  },
+
+  {
+    "craftzdog/solarized-osaka.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = function()
+      return {
+        transparent = false,
+      }
+    end,
   },
 }

@@ -21,9 +21,9 @@ return {
         end,
       },
       {
-        path = "/Users/janwadolowski/.config/nvim",
+        path = "/Users/janwadolowski/Localdocs/ALPIMA/va/webapi",
         config = function()
-          vim.cmd([[colorscheme kanagawa]])
+          vim.cmd([[colorscheme habamax]])
         end,
       },
     },
