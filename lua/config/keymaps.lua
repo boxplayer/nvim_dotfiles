@@ -3,7 +3,7 @@
 -- Add any additional keymaps here
 
 -- Cowboy
-local discipline = require("craftzdog.discipline")
+-- local discipline = require("craftzdog.discipline")
 -- discipline.cowboy()
 
 local keymap = vim.keymap
@@ -13,6 +13,15 @@ keymap.set("n", "<leader>sZ", function()
   require("telescope").extensions.diff.diff_files({ hidden = true })
 end, { desc = "Compare 2 files" })
 
+-- Telescope keymaps
+-- Resume last search
+keymap.set("n", "<leader>?", require("telescope.builtin").resume, {
+  noremap = true,
+  silent = true,
+  desc = "Resume",
+})
+
+-- Show diff between files
 keymap.set("n", "<leader>sz", function()
   require("telescope").extensions.diff.diff_current({ hidden = true })
 end, { desc = "Compare file with current" })

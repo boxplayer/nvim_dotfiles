@@ -27,8 +27,13 @@ return {
   {
     "catppuccin/nvim",
     priority = 1000,
+    lazy = false,
+    name = "catppuccin",
     integration = {
       cmp = { enabled = true, border = false },
+    },
+    opts = {
+      transparent_background = true,
     },
   },
   {

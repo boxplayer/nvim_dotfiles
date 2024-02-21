@@ -57,7 +57,7 @@ return {
         ["markdown.mdx"] = { "prettier" },
         ["graphql"] = { "prettier" },
         ["handlebars"] = { "prettier" },
-        ["htmldjango"] = { "djlint" },
+        -- ["htmldjango"] = { "djlint" },
         ["typ"] = { "typst" },
       },
     },

@@ -23,7 +23,7 @@ return {
       {
         path = "/Users/janwadolowski/Localdocs/ALPIMA/va/webapi",
         config = function()
-          vim.cmd([[colorscheme habamax]])
+          vim.cmd([[colorscheme kanagawa-dragon]])
         end,
       },
     },
