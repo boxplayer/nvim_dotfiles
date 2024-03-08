@@ -40,7 +40,6 @@ return {
     "tinted-theming/base16-vim",
     lazy = true,
   },
-
   {
     "craftzdog/solarized-osaka.nvim",
     lazy = false,

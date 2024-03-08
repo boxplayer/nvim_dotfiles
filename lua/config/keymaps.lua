@@ -32,6 +32,9 @@ keymap.set("n", "<leader>a", "<cmd>SymbolsOutline<CR>")
 -- Cellular automaton
 keymap.set("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>")
 
+-- Cellular automaton
+keymap.set("n", "<leader>gol", "<cmd>CellularAutomaton game_of_life<CR>")
+
 -- Bufferline
 keymap.set("n", "<A-l>", "<cmd>BufferLineMoveNext<CR>")
 keymap.set("n", "<A-h>", "<cmd>BufferLineMovePrev<CR>")

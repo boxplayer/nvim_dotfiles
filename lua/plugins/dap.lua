@@ -122,7 +122,7 @@ return {
           ---@diagnostic disable-next-line: missing-fields
           require("dap-vscode-js").setup({
             -- Path of node executable. Defaults to $NODE_PATH, and then "node"
-            -- node_path = "node",
+            node_path = "node",
 
             -- Path to vscode-js-debug installation.
             debugger_path = vim.fn.resolve(vim.fn.stdpath("data") .. "/lazy/vscode-js-debug"),
