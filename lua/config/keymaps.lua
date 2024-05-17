@@ -26,6 +26,10 @@ keymap.set("n", "<leader>sz", function()
   require("telescope").extensions.diff.diff_current({ hidden = true })
 end, { desc = "Compare file with current" })
 
+keymap.set("n", "<leader>go", function()
+  require("mini.diff").toggle_overlay(0)
+end, { desc = "Toggle mini.diff overlay" })
+
 -- Symbols outline toggle keymap
 keymap.set("n", "<leader>a", "<cmd>SymbolsOutline<CR>")
 

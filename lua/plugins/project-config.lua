@@ -26,6 +26,12 @@ return {
           vim.cmd([[colorscheme kanagawa-dragon]])
         end,
       },
+      {
+        path = "/Users/janwadolowski/Localdocs/Code/cinematica",
+        config = function()
+          vim.cmd([[colorscheme  catppuccin-mocha]])
+        end,
+      },
     },
     silent = true, -- display message after load config file
   },

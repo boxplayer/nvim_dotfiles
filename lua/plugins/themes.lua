@@ -32,9 +32,6 @@ return {
     integration = {
       cmp = { enabled = true, border = false },
     },
-    opts = {
-      transparent_background = true,
-    },
   },
   {
     "tinted-theming/base16-vim",
