@@ -2,10 +2,6 @@
 -- Default keymaps that are always set: https://github.com/LazyLazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- Cowboy
--- local discipline = require("craftzdog.discipline")
--- discipline.cowboy()
-
 local keymap = vim.keymap
 
 -- File Diff keymaps

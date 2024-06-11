@@ -1,13 +1,5 @@
 return {
   {
-    "akinsho/bufferline.nvim",
-    opts = {
-      options = {
-        truncate_names = false,
-      },
-    },
-  },
-  {
     "lewis6991/gitsigns.nvim",
     opts = {
       current_line_blame = true,
