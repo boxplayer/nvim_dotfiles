@@ -4,12 +4,19 @@
 
 local keymap = vim.keymap
 
--- File Diff keymaps
+-- [File Diff keymaps]
 keymap.set("n", "<leader>sZ", function()
   require("telescope").extensions.diff.diff_files({ hidden = true })
 end, { desc = "Compare 2 files" })
 
--- Telescope keymaps
+keymap.set("n", "<leader>sz", function()
+  require("telescope").extensions.diff.diff_current({ hidden = true })
+end, { desc = "Compare file with current" })
+
+-- [fzf-lua keymaps]
+keymap.set("n", '<leader>"', require("fzf-lua").resume)
+
+-- [Telescope keymaps]
 -- Resume last search
 keymap.set("n", "<leader>?", require("telescope.builtin").resume, {
   noremap = true,
@@ -17,15 +24,7 @@ keymap.set("n", "<leader>?", require("telescope.builtin").resume, {
   desc = "Resume",
 })
 
--- Show diff between files
-keymap.set("n", "<leader>sz", function()
-  require("telescope").extensions.diff.diff_current({ hidden = true })
-end, { desc = "Compare file with current" })
-
-keymap.set("n", "<leader>go", function()
-  require("mini.diff").toggle_overlay(0)
-end, { desc = "Toggle mini.diff overlay" })
-
+-- [Other keymaps]
 -- Symbols outline toggle keymap
 keymap.set("n", "<leader>a", "<cmd>SymbolsOutline<CR>")
 
