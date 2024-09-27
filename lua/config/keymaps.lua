@@ -14,6 +14,7 @@ keymap.set("n", "<leader>sz", function()
 end, { desc = "Compare file with current" })
 
 -- [fzf-lua keymaps]
+-- Resume last search
 keymap.set("n", '<leader>"', require("fzf-lua").resume)
 
 -- [Telescope keymaps]
