@@ -23,14 +23,7 @@ return {
   },
   {
     "stevearc/conform.nvim",
-    optional = true,
-    default_format_opts = {
-      format = {
-        timeout_ms = 3000,
-        async = false, -- not recommended to change
-        quiet = false, -- not recommended to change
-        lsp_format = "fallback", -- not recommended to change
-      },
+    opts = {
       formatters_by_ft = {
         ["javascript"] = { "prettier" },
         ["javascriptreact"] = { "prettier" },
@@ -48,11 +41,11 @@ return {
         ["markdown.mdx"] = { "prettier" },
         ["graphql"] = { "prettier" },
         ["handlebars"] = { "prettier" },
-        -- ["htmldjango"] = { "djlint" },
+        ["htmldjango"] = { "djlint" },
         ["typ"] = { "typst" },
         ["astro"] = { "prettier" },
       },
-    },
+    }
   },
   -- Use <tab> for completion and snippets (supertab)
   -- first: disable default <tab> and <s-tab> behavior in LuaSnip
