@@ -17,14 +17,6 @@ end, { desc = "Compare file with current" })
 -- Resume last search
 keymap.set("n", '<leader>"', require("fzf-lua").resume)
 
--- [Telescope keymaps]
--- Resume last search
-keymap.set("n", "<leader>?", require("telescope.builtin").resume, {
-  noremap = true,
-  silent = true,
-  desc = "Resume",
-})
-
 -- [Other keymaps]
 -- Symbols outline toggle keymap
 keymap.set("n", "<leader>a", "<cmd>SymbolsOutline<CR>")
@@ -36,5 +28,5 @@ keymap.set("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>")
 keymap.set("n", "<leader>gol", "<cmd>CellularAutomaton game_of_life<CR>")
 
 -- Bufferline
-keymap.set("n", "<A-l>", "<cmd>BufferLineMoveNext<CR>")
-keymap.set("n", "<A-h>", "<cmd>BufferLineMovePrev<CR>")
+keymap.set("n", "<A-c-l>", "<cmd>BufferLineMoveNext<CR>")
+keymap.set("n", "<A-c-h>", "<cmd>BufferLineMovePrev<CR>")
