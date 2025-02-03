@@ -5,21 +5,21 @@
 local keymap = vim.keymap
 
 -- [File Diff keymaps]
-keymap.set("n", "<leader>sZ", function()
-  require("telescope").extensions.diff.diff_files({ hidden = true })
-end, { desc = "Compare 2 files" })
-
-keymap.set("n", "<leader>sz", function()
-  require("telescope").extensions.diff.diff_current({ hidden = true })
-end, { desc = "Compare file with current" })
+-- keymap.set("n", "<leader>sZ", function()
+--   require("telescope").extensions.diff.diff_files({ hidden = true })
+-- end, { desc = "Compare 2 files" })
+--
+-- keymap.set("n", "<leader>sz", function()
+--   require("telescope").extensions.diff.diff_current({ hidden = true })
+-- end, { desc = "Compare file with current" })
 
 -- [fzf-lua keymaps]
 -- Resume last search
-keymap.set("n", '<leader>"', require("fzf-lua").resume)
+-- keymap.set("n", '<leader>"', require("fzf-lua").resume)
 
 -- [Other keymaps]
--- Symbols outline toggle keymap
-keymap.set("n", "<leader>a", "<cmd>SymbolsOutline<CR>")
+-- Aerial toggle keymap
+keymap.set("n", "<leader>a", "<cmd>AerialToggle!<CR>")
 
 -- Cellular automaton
 keymap.set("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>")

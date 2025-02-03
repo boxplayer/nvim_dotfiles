@@ -17,7 +17,13 @@ return {
       scroll = { enabled = true },
       statuscolumn = { enabled = true },
       words = { enabled = true },
-   },
+      picker = {
+        layout = "vertical",
+        matcher = {
+          frecency = false,
+        },
+      },
+    },
     keys = {
       {
         "<leader>z",
@@ -157,6 +163,13 @@ return {
             },
           })
         end,
+      },
+      {
+        '<leader>"',
+        function()
+          Snacks.picker.resume()
+        end,
+        desc = "Resume",
       },
     },
     init = function()
