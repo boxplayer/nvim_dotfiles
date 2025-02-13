@@ -13,10 +13,6 @@ local keymap = vim.keymap
 --   require("telescope").extensions.diff.diff_current({ hidden = true })
 -- end, { desc = "Compare file with current" })
 
--- [fzf-lua keymaps]
--- Resume last search
--- keymap.set("n", '<leader>"', require("fzf-lua").resume)
-
 -- [Other keymaps]
 -- Aerial toggle keymap
 keymap.set("n", "<leader>a", "<cmd>AerialToggle!<CR>")

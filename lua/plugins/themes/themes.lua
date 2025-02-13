@@ -13,6 +13,14 @@ return {
     },
   },
   {
+    "eldritch-theme/eldritch.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = false,
+    },
+  },
+  {
     "ellisonleao/gruvbox.nvim",
   },
   {

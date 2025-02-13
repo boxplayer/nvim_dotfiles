@@ -22,6 +22,11 @@ return {
         matcher = {
           frecency = false,
         },
+        formatters = {
+          file = {
+            truncate = 80,
+          },
+        },
       },
     },
     keys = {

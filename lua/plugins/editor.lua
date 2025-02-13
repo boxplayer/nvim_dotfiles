@@ -17,34 +17,4 @@ return {
       inlay_hints = { enabled = false },
     },
   },
-  {
-    "ibhagwan/fzf-lua",
-    opts = function(_, opts)
-      local actions = require("fzf-lua.actions")
-      return vim.tbl_deep_extend("force", opts, {
-        files = {
-          cwd_prompt = false,
-          actions = {
-            ["ctrl-i"] = { actions.toggle_ignore },
-            ["ctrl-h"] = { actions.toggle_hidden },
-          },
-        },
-        grep = {
-          actions = {
-            ["ctrl-i"] = { actions.toggle_ignore },
-            ["ctrl-h"] = { actions.toggle_hidden },
-          },
-        },
-        winopts = {
-          height = 0.9,
-          width = 0.7,
-          preview = {
-            layout = "vertical",
-            vertical = "down:60%",
-          },
-        },
-      })
-    end,
-    -- opts = {},
-  },
 }
