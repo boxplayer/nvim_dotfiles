@@ -13,6 +13,7 @@ return {
         enabled = true,
         timeout = 3000,
       },
+      image = {},
       quickfile = { enabled = true },
       scroll = { enabled = true },
       statuscolumn = { enabled = true },
@@ -25,6 +26,13 @@ return {
         formatters = {
           file = {
             truncate = 80,
+          },
+        },
+        win = {
+          input = {
+            keys = {
+              ["<a-u>"] = { "toggle_hidden", mode = { "i", "n" } },
+            },
           },
         },
       },
