@@ -26,3 +26,6 @@ keymap.set("n", "<leader>gol", "<cmd>CellularAutomaton game_of_life<CR>")
 -- Bufferline
 keymap.set("n", "<A-c-l>", "<cmd>BufferLineMoveNext<CR>")
 keymap.set("n", "<A-c-h>", "<cmd>BufferLineMovePrev<CR>")
+
+-- Git blame
+keymap.set("n", "<leader>gb", "<cmd>Git blame<CR>", { desc = "Git Blame (Full File)" })

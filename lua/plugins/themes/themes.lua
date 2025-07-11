@@ -5,12 +5,22 @@ return {
     lazy = true,
     opts = {
       style = "moon",
-      transparent = false,
+      colors = {
+        border = "#FFFFFF",
+      },
+      transparent = true,
       styles = {
         sidebar = "transparent",
-        floats = "dark",
+        floats = "normal",
       },
+      dim_inactive = true,
     },
+    -- added gray borders between panes
+    require("tokyonight").setup({
+      on_colors = function(colors)
+        colors.border = "#565f89"
+      end,
+    }),
   },
   {
     "eldritch-theme/eldritch.nvim",
